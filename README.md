@@ -7,4 +7,4 @@ YOU'RE A BALL! No seriously...you're a ball. Maybe not in real life BUT you will
 ![matrix](https://media.giphy.com/media/eIm624c8nnNbiG0V3g/giphy.gif)
 
 ## Game Layout:
-![Wireframe](../../../../Desktop/ProjectOne-Wireframe.png)
+![Wireframe](ProjectOne-Wireframe.png)
