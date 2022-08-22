@@ -4,16 +4,66 @@
 }
 
 body {
-    background-image: url(./);
+    background-image: url(./IMG/RAIN_BCKGRD.png);
+    background-size: 100vw 100vh;
 }
 
 h1 {
     color:aqua;
-    font-size: 37px;
+    font-size: 40px;
     font-family: "pesta";
+    text-shadow: 1px 1px #000000;
 }
 
 div {
     display: flex;
     justify-content: center;
+    background-size: 80vw 50vh;
+}
+
+.groupOne {
+    position: absolute;
+    left: 3.84%;
+    right: 11.72%;
+    top: 10.17%;
+    bottom: 23.03%;
+
+    background: rgba(0, 225, 255, 0.946);
+    filter: blur(4px);
+    border-radius: 91px;
+/* Note: backdrop-filter has minimal browser support */
+}
+
+.heart {
+    position: absolute;
+    left: 17.83%;
+    right: 80.39%;
+    top: 38.99%;
+    bottom: 58.47%;
+    
+    background: url();
+}
+
+.ball {
+    position: absolute;
+    left: 17.28%;
+    right: 79.84%;
+    top: 38.21%;
+    bottom: 57.69%;
+
+    background: #E5C5FF;
+}
+
+.maze {
+    position: absolute;
+    left: 15.62%;
+    right: 23.39%;
+    top: 36.23%;
+    bottom: 55.83%;
+
+    background: #ADFFCE;
+    backdrop-filter: blur(4px);
+
+    border-radius: 50px;
+
 }
