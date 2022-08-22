@@ -41,7 +41,7 @@ div {
     top: 38.99%;
     bottom: 58.47%;
     
-    background: url();
+    background: url(/IMG/heart\ svg.png);
 }
 
 .ball {
@@ -50,7 +50,6 @@ div {
     right: 79.84%;
     top: 38.21%;
     bottom: 57.69%;
-
     background: #E5C5FF;
 }
 
@@ -60,10 +59,20 @@ div {
     right: 23.39%;
     top: 36.23%;
     bottom: 55.83%;
-
     background: #ADFFCE;
     backdrop-filter: blur(4px);
-
     border-radius: 50px;
+}
 
+
+
+.end {
+    position: absolute;
+    left: 68.59%;
+    right: 23.39%;
+    top: 35.48%;
+    bottom: 55.21%;
+    background: #FFE600;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
 }

@@ -6,6 +6,14 @@ Step 2: game will be active until player either
     -reaches completes lvl 
 Step 3: if player dies make sure to only restart the lvl not the whole game
 
+*/
+
+const gameActive = document.querySelector(".playBtn");
+const endGame = document.querySelector(".restart");
+
+fuction
+
+
 
 
 
