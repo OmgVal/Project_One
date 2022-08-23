@@ -12,14 +12,22 @@
             <h1 href="./FONT/PestaTahunBaru.ttf">A-MaZe-Balls</h1>  
         </div>
 
-        <div class="groupOne">
-            <div class="heart"></div>
-            <div>
-               <button class="playBtn">play</button> 
-            </div>
-                
-        </div>
+        <canvas></canvas>
 
+        <div>
+            <div class="groupOne">
+                <div class="maze" style="display: none;" >3</div>
+                <div class="end">4</div>
+
+                <div class="ball">
+                    <div class="circle" style="display: none;">2</div>
+                    <div class="heart">1</div>
+                </div>
+            </div>
+            
+        </div>
+        <button class="playBtn">play</button> 
+        <button onClick="document.location.reload(true)">Restart</button>
     </body>
     <script href="./main.js"></script>
 </html>

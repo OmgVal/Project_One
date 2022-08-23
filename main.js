@@ -8,10 +8,11 @@ Step 3: if player dies make sure to only restart the lvl not the whole game
 
 */
 
+const body = document.body
 const gameActive = document.querySelector(".playBtn");
+const plyMove = document.addEventListener
 const endGame = document.querySelector(".restart");
 
-fuction
 
 
 
