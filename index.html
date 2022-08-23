@@ -4,30 +4,32 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Combo&family=Mystery+Quest&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
         <title>a-Maze-balls</title>
     </head>
-    <body>
+    <body onload="move('ball')">
         <div>
             <h1 href="./FONT/PestaTahunBaru.ttf">A-MaZe-Balls</h1>  
         </div>
 
-        <canvas></canvas>
-
         <div>
             <div class="groupOne">
                 <div class="maze" style="display: none;" >3</div>
-                <div class="end">4</div>
+                <div class="end"></div>
 
-                <div class="ball" onmousedown="plyMove">
-                    <div class="circle" style="display: none;">2</div>
+                <div id="ball">
+                    <div class="circle">2</div>
                     <div class="heart">1</div>
                 </div>
             </div>
             
         </div>
+
+        <div class="obstacle">
+
+        </div>
         <button class="playBtn">play</button> 
         <button onClick="document.location.reload(true)">Restart</button>
+        <script tyep="text/javascript" src="./main.js"></script>
     </body>
-    <script href="./main.js"></script>
 </html>
