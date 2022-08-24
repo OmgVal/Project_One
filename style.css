@@ -23,16 +23,24 @@ h1 {
     text-shadow: 1px 1px #000000;
 }
 
-.groupOne h1 {
+.container h1 {
     display: flex;
     justify-content: flex-end;
-    margin-right: 10%;
+    position: absolute;
+    padding-top: 10px;
     font-family: "American Kids", cursive;
+    color: #fc7702;
 }
 
 .groupOne svg {
     display:flex;
     justify-content: center;
+    align-items: center;
+    /* background-size: 100vw 50vh; */
+    padding: 12%;
+    width: fit-content;
+    height: fit-content;
+   
 }
 
 .cursor {
@@ -43,39 +51,43 @@ h1 {
     position: absolute;
     background: url(./IMG/Vectorheart.png);
     background-size: cover;
+    cursor: none;
 }
 
 .maze {
+    width: 980;
+    height: 150;
     /* cursor: url(./IMG/Vectorheart.png), auto; */
 }
-/*
- div {
+
+ .groupOne {
     display: flex;
     justify-content: center;
-} 
-*/
- .groupOne {
-    background-size: 100vw 50vh;
-    left: 50%;
-    right: 50%;
-    top: 10.17%;
-    bottom: 23.03%;
-    min-width: fit-content;
-    min-height: fit-content;
+    background-size: 100vw 100vh;
+    width: 1000px;
+    height: 600px;
     background: rgba(207, 182, 255, 0.946);
     border-radius: 91px;
 }
 
-#ball {
+.container {
     display: flex;
-    justify-content: flex-end;
-    width: 50px;
-    height: 50px;
-    background: #E5C5FF;
-    border-radius: 90px;
-} 
+    justify-content: center;
+    align-content: center;
+}
 
 .playBtn {
     display: flex;
     align-items: center;
+}
+
+.infoBtn {
+    border: none;
+    background-color: rgba(0, 0, 139, 0);
+    color: rgb(255, 1, 137);
+}
+
+p {
+    font-family: 'American Kids', cursive;
+    font-size: 20px;
 }
