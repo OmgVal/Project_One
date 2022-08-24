@@ -3,22 +3,37 @@
     src: url(./FONT/PestaTahunBaru.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: "American Kids";
+    src: url(./FONT/American\ Kids.ttf) format('truetype');
+}
+
 body {
     background-image: url(./IMG/RAIN_BCKGRD.png);
-    display: flex;
-    justify-content: center;
     background-size: 100vw 100vh;
 }
 
 h1 {
     display: flex;
+    justify-content: center;
     align-items: center;
     color:aqua;
     font-size: 40px;
-    font-family: "pesta";
+    font-family: "pesta", cursive;
     text-shadow: 1px 1px #000000;
 }
 
+.groupOne h1 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    font-family: "American Kids", cursive;
+}
+
+.groupOne svg {
+    display:flex;
+    justify-content: center;
+}
 /*
  div {
     display: flex;
@@ -26,57 +41,23 @@ h1 {
 } 
 */
  .groupOne {
-    display: flex;
     background-size: 100vw 50vh;
-    justify-content: center;
-    position: absolute;
-    left: 10%;
-    right: 10%;
+    left: 50%;
+    right: 50%;
     top: 10.17%;
     bottom: 23.03%;
     background: rgba(207, 182, 255, 0.946);
-    filter: blur(1px);
     border-radius: 91px;
 }
 
 #ball {
-    /* position: absolute;
-    left: 17.1%;
-    right: 80.39%;
-    top: 38.3%;
-    bottom: 58.39%; */
+    display: flex;
+    justify-content: flex-end;
     width: 50px;
     height: 50px;
     background: #E5C5FF;
     border-radius: 90px;
-    background-image: url(./IMG/Vectorheart.png);
-    background-size: cover;
 } 
-
-
-/*
-.maze {
-    position: absolute;
-    left: 15.62%;
-    right: 23.39%;
-    top: 36.23%;
-    bottom: 55.83%;
-    background: #ADFFCE;
-    backdrop-filter: blur(4px);
-    border-radius: 50px;
-}
-
-.end {
-    position: absolute;
-    left: 68.59%;
-    right: 23.39%;
-    top: 35.48%;
-    bottom: 55.21%;
-    background: #FFE600;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-} 
-*/
 
 .playBtn {
     display: flex;

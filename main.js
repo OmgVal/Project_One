@@ -26,25 +26,25 @@ const endGame = document.querySelector(".restart");
 //     }
 // }
 
-//Draggable Ball
-let dragBall;
+// //Draggable Ball
+// let dragBall;
 
-function move(id) {
-    let obj = document.getElementById('ball');
-    obj.onmousedown = function() {
-    dragBall = obj;
-    }
-    document.onmouseup = function(e) {
-        dragBall = null;
-    }
-    document.onmousemove = function(e) {
-        let x = e.pageX;
-        let y = e.pageY;
+// function move(id) {
+//     let obj = document.getElementById('ball');
+//     obj.onmousedown = function() {
+//     dragBall = obj;
+//     }
+//     document.onmouseup = function(e) {
+//         dragBall = null;
+//     }
+//     document.onmousemove = function(e) {
+//         let x = e.pageX;
+//         let y = e.pageY;
 
-        dragBall.style.left = x + "px";
-        dragBall.style.top = y + "px";
-    }
-}
+//         dragBall.style.left = x + "px";
+//         dragBall.style.top = y + "px";
+//     }
+// }
 
 
 
