@@ -30,4 +30,5 @@ Tech Stack = HTML, CSS, JavaScript (Mix of DOM and Canvas APIs)
 * using longer scripts instead of shortcuts when applicable 
 * Problem solving/converting ideas into code
 
-
+Sources:
+https://youtu.be/rfpRZ2t_BrQ

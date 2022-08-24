@@ -34,6 +34,20 @@ h1 {
     display:flex;
     justify-content: center;
 }
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(255, 65, 147);
+    border-radius: 50%;
+    position: absolute;
+    background: url(./IMG/Vectorheart.png);
+    background-size: cover;
+}
+
+.maze {
+    /* cursor: url(./IMG/Vectorheart.png), auto; */
+}
 /*
  div {
     display: flex;
@@ -46,6 +60,8 @@ h1 {
     right: 50%;
     top: 10.17%;
     bottom: 23.03%;
+    min-width: fit-content;
+    min-height: fit-content;
     background: rgba(207, 182, 255, 0.946);
     border-radius: 91px;
 }

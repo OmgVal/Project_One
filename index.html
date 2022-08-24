@@ -1,119 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://kit.fontawesome.com/ac0aacd841.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Combo&family=Mystery+Quest&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./style.css" />
         <title>a-Maze-balls</title>
     </head>
-    <body onload="move('ball')">
+    <body>
         <div>
             <h1>A-MaZe-Balls</h1>  
         </div>
 
         <div>
+            <div>
+                <img src="/IMG/Vectorheart.png"  onclick="move('ball')" alt="ball with heart on it" id="ball"/>
+            </div>
             <div class="groupOne">
                 <h1>Level One</h1>
-                    <svg class="levelOne" width="963" height="468" viewBox="0 0 963 468" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_b_27_15)">
-                        <path d="M340 197C340 169.386 362.386 147 390 147H913C940.614 147 963 169.386 963 197V219C963 246.614 940.614 269 913 269H390C362.386 269 340 246.614 340 219V197Z" fill="#D0FA29"/>
-                        </g>
-                        <g filter="url(#filter1_b_27_15)">
-                        <path d="M840 50C840 22.3858 862.386 0 890 0H912C939.614 0 962 22.3858 962 50V219C962 246.614 939.614 269 912 269H890C862.386 269 840 246.614 840 219V50Z" fill="#D0FA29"/>
-                        </g>
-                        <g filter="url(#filter2_b_27_15)">
-                        <path d="M340 197C340 169.386 362.386 147 390 147H412C439.614 147 462 169.386 462 197V409C462 436.614 439.614 459 412 459H390C362.386 459 340 436.614 340 409V197Z" fill="#D0FA29"/>
-                        </g>
-                        <g filter="url(#filter3_b_27_15)">
-                        <path d="M0 50C0 22.3858 22.3858 0 50 0H913C940.614 0 963 22.3858 963 50V72C963 99.6142 940.614 122 913 122H50C22.3858 122 0 99.6142 0 72V50Z" fill="#D0FA29"/>
-                        </g>
-                        <g filter="url(#filter4_b_27_15)">
-                        <path d="M351 207C351 179.386 373.386 157 401 157H902C929.614 157 952 179.386 952 207V210C952 237.614 929.614 260 902 260H401C373.386 260 351 237.614 351 210V207Z" fill="#D49DFF"/>
-                        </g>
-                        <g filter="url(#filter5_b_27_15)">
-                        <path d="M351 213C351 185.386 373.386 163 401 163H404C431.614 163 454 185.386 454 213V349C454 376.614 431.614 399 404 399H401C373.386 399 351 376.614 351 349V213Z" fill="#D49DFF"/>
-                        </g>
-                        <g filter="url(#filter6_d_27_15)">
-                        <rect x="340" y="339" width="124.053" height="120.313" rx="30" fill="#00FFF0"/>
-                        </g>
-                        <g filter="url(#filter7_b_27_15)">
-                        <path d="M849 59C849 31.3858 871.386 9 899 9H902C929.614 9 952 31.3858 952 59V188C952 215.614 929.614 238 902 238H899C871.386 238 849 215.614 849 188V59Z" fill="#D49DFF"/>
-                        </g>
-                        <g filter="url(#filter8_b_27_15)">
-                        <path d="M9 59C9 31.3858 31.3858 9 59 9H901.53C929.144 9 951.53 31.3858 951.53 59V61.6675C951.53 89.2817 929.144 111.668 901.53 111.668H59C31.3858 111.668 9 89.2817 9 61.6675V59Z" fill="#D49DFF"/>
-                        </g>
-                        <defs>
-                        <filter id="filter0_b_27_15" x="336" y="143" width="631" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
-                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_27_15"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_27_15" result="shape"/>
-                        </filter>
-                        <filter id="filter1_b_27_15" x="836" y="-4" width="130" height="277" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
-                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_27_15"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_27_15" result="shape"/>
-                        </filter>
-                        <filter id="filter2_b_27_15" x="336" y="143" width="130" height="320" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
-                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_27_15"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_27_15" result="shape"/>
-                        </filter>
-                        <filter id="filter3_b_27_15" x="-4" y="-4" width="971" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
-                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_27_15"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_27_15" result="shape"/>
-                        </filter>
-                        <filter id="filter4_b_27_15" x="347" y="153" width="609" height="111" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
-                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_27_15"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_27_15" result="shape"/>
-                        </filter>
-                        <filter id="filter5_b_27_15" x="347" y="159" width="111" height="244" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
-                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_27_15"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_27_15" result="shape"/>
-                        </filter>
-                        <filter id="filter6_d_27_15" x="336" y="339" width="132.052" height="128.313" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset dy="4"/>
-                        <feGaussianBlur stdDeviation="2"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_27_15"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_27_15" result="shape"/>
-                        </filter>
-                        <filter id="filter7_b_27_15" x="845" y="5" width="111" height="237" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
-                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_27_15"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_27_15" result="shape"/>
-                        </filter>
-                        <filter id="filter8_b_27_15" x="5" y="5" width="950.53" height="110.667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
-                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_27_15"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_27_15" result="shape"/>
-                        </filter>
-                        </defs>
-                        </svg>
+                <svg width="963" height="468" viewBox="0 0 963 468" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_b_27_15)">
+                    <g filter="url(#filter1_b_27_15)">
+                    <path d="M340 197C340 169.386 362.386 147 390 147H412C439.614 147 462 169.386 462 197V409C462 436.614 439.614 459 412 459H390C362.386 459 340 436.614 340 409V197Z" fill="#D0FA29"/>
+                    <path d="M840 50C840 22.3858 862.386 0 890 0H912C939.614 0 962 22.3858 962 50V219C962 246.614 939.614 269 912 269H890C862.386 269 840 246.614 840 219V50Z" fill="#D0FA29"/>
+                    <path d="M0 50C0 22.3858 22.3858 0 50 0H913C940.614 0 963 22.3858 963 50V72C963 99.6142 940.614 122 913 122H50C22.3858 122 0 99.6142 0 72V50Z" fill="#D0FA29"/>
+                    <path d="M340 197C340 169.386 362.386 147 390 147H913C940.614 147 963 169.386 963 197V219C963 246.614 940.614 269 913 269H390C362.386 269 340 246.614 340 219V197Z" fill="#D0FA29"/>
+                    </g>
+                    <g filter="url(#filter2_b_27_15)">
+                    <path class="maze" d="M351 207C351 179.386 373.386 157 401 157H902C929.614 157 952 179.386 952 207V210C952 237.614 929.614 260 902 260H401C373.386 260 351 237.614 351 210V207Z" fill="#D49DFF"/>
+                    <path class="maze" d="M351 213C351 185.386 373.386 163 401 163H404C431.614 163 454 185.386 454 213V349C454 376.614 431.614 399 404 399H401C373.386 399 351 376.614 351 349V213Z" fill="#D49DFF"/>
+                    <path class="maze" d="M849 78C849 56.9998 861.946 39.0235 880.293 31.617C890.468 27.5096 900.082 19.8763 901.53 9V9C928.351 9 961.061 20.7923 952.838 73.2402C952.341 76.4088 952 79.6148 952 82.822V207C952 234.614 929.614 257 902 257H899C871.386 257 849 234.614 849 207V78Z" fill="#D49DFF"/>
+                    <path class="maze" d="M9 59C9 31.3858 31.3858 9 59 9H901.53C929.144 9 951.53 31.3858 951.53 59V61.6675C951.53 89.2817 929.144 111.668 901.53 111.668H59C31.3858 111.668 9 89.2817 9 61.6675V59Z" fill="#D49DFF"/>
+                    </g>
+                    <g filter="url(#filter3_d_27_15)">
+                    <rect x="340" y="339" width="124.053" height="120.313" rx="30" fill="#00FFF0"/>
+                    </g>
+                    </g>
+                    <defs>
+                    <filter id="filter0_b_27_15" x="-4" y="-4" width="971" height="467.313" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_27_15"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_27_15" result="shape"/>
+                    </filter>
+                    <filter id="filter1_b_27_15" x="-4" y="-4" width="971" height="467" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_27_15"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_27_15" result="shape"/>
+                    </filter>
+                    <filter id="filter2_b_27_15" x="5" y="5" width="953.129" height="398" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_27_15"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_27_15" result="shape"/>
+                    </filter>
+                    <filter id="filter3_d_27_15" x="336" y="339" width="132.052" height="128.313" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_27_15"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_27_15" result="shape"/>
+                    </filter>
+                    </defs>
+                </svg>                       
                         
-                        
-                        
+                </div>
+                <div class="cursor">
+                    
                 </div>
 
-                <div>
-                    <img src="/IMG/Vectorheart.png" alt="ball with heart on it" id="ball"/>
-                    <div class="circle">2</div>
-                    <div class="heart">1</div>
-                </div>
             </div>
             
         </div>
@@ -122,7 +82,10 @@
 
         </div>
         <button class="playBtn">play</button> 
-        <button class="btn"><i class="fa fa-home"></i> Home</button>
+        <button class="infoBtn"><div class="fa-3x">
+            <i class="fa-solid fa-circle-info fa-beat-fade" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;" ></i>
+          </button>
+
         <button onClick="document.location.reload(true)">Restart</button>
         <script tyep="text/javascript" src="./main.js"></script>
     </body>

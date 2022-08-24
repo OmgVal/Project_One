@@ -11,20 +11,29 @@ Step 3: if player dies make sure to only restart the lvl not the whole game
 const body = document.body
 const gameActive = document.querySelector(".playBtn");
 const endGame = document.querySelector(".restart");
+const cursor = document.querySelector('.cursor');
+const mazePath = document.querySelectorAll('.maze');
+
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+})
+
+
 
 // function plyMove()
 
-// //collision detection
-// function detectHit() {
-//     const obstacleLeft = ball.x + ball.width >= obstacleLeft.x
-//     const obstacleRight = ball.x <= obstacle.x + obstacle.width
-//     const obstacleTop = ball.y + ball.height >= obstacle.y
-//     const obstacleBottom = ball.y <= obstacle.y + obstacle.height
-//     if (obstacleBottom && obstacleLeft && obstacleRight && obstacleRight) {
-//         ball.alive = false
-//         statusDisplay.innerText = "Game Over!"
-//     }
-// }
+//collision detection
+function detectHit() {
+    const obstacleLeft = ball.x + ball.width >= obstacleLeft.x
+    const obstacleRight = ball.x <= obstacle.x + obstacle.width
+    const obstacleTop = ball.y + ball.height >= obstacle.y
+    const obstacleBottom = ball.y <= obstacle.y + obstacle.height
+    if (obstacleBottom && obstacleLeft && obstacleRight && obstacleRight) {
+        ball.alive = false
+        statusDisplay.innerText = "Game Over!"
+    }
+}
 
 // //Draggable Ball
 // let dragBall;
@@ -32,7 +41,7 @@ const endGame = document.querySelector(".restart");
 // function move(id) {
 //     let obj = document.getElementById('ball');
 //     obj.onmousedown = function() {
-//     dragBall = obj;
+//         dragBall = obj;
 //     }
 //     document.onmouseup = function(e) {
 //         dragBall = null;
@@ -41,8 +50,8 @@ const endGame = document.querySelector(".restart");
 //         let x = e.pageX;
 //         let y = e.pageY;
 
-//         dragBall.style.left = x + "px";
-//         dragBall.style.top = y + "px";
+//         dragBall.style.left = x + "px;";
+//         dragBall.style.top = y + "px;";
 //     }
 // }
 
