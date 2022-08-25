@@ -15,12 +15,21 @@ const cursor = document.querySelector('.cursor');
 const mazePath = document.querySelectorAll('.maze');
 const instructions = document.querySelector('.infoBtn').addEventListener("click", displayMsg);
 const obstacle = document.querySelectorAll('.mazeBorder');
+const gameState = document.querySelector('.text')
 
+//info button
 function displayMsg() {
    console.log('itworks!')
 
 }
 
+document.addEventListener("click", e =>{
+    gameActive.setAttribute('style', "display: none;")
+    let gameActive = true 
+    function gameState =
+
+    console.log('start!')
+})
 
 //Cursor to Ball
 document.addEventListener('mousemove', e => {
@@ -36,11 +45,13 @@ function detectHit() {
     const obstacleTop = cursor.y + cursor.height >= obstacle.y
     const obstacleBottom = cursor.y <= obstacle.y + obstacle.height
     if (obstacleBottom && obstacleLeft && obstacleTop && obstacleRight) {
-        cursor.alive = false
-        statusDisplay.innerText = "Game Over!"
-    }
+        cursor.alive = true
+        console.log('alive')
+     } else {
+        console.log('lost')
+     }
 }
-console.log(detectHit())
+// console.log(detectHit())
 
 // //Draggable Ball
 // let dragBall;
@@ -69,3 +80,9 @@ gameActive.addEventListener("click", e => {
     detectHit()
 
  })
+
+ window.addEventListener("mouseover", (e) => {
+    console.log(e.clientX, e.clientY)
+ })
+
+//  change cursor loc upon starting game to inside maze
