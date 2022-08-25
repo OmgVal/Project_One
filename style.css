@@ -76,11 +76,6 @@ h1 {
     align-content: center;
 }
 
-.playBtn {
-    display: flex;
-    align-items: center;
-}
-
 .infoBtn {
     border: none;
     background-color: rgba(0, 0, 139, 0);
