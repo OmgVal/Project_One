@@ -16,6 +16,7 @@ const mazePath = document.querySelectorAll('.maze');
 const instructions = document.querySelector('.infoBtn').addEventListener("click", displayMsg);
 const obstacle = document.querySelectorAll('.mazeBorder');
 const gameState = document.querySelector('.text')
+const mouseStart = 
 
 //info button
 function displayMsg() {
@@ -24,10 +25,7 @@ function displayMsg() {
 }
 
 document.addEventListener("click", e =>{
-    let gameLayout = document.getElementsByClassName(".groupOne")
-    gameActive.setAttribute('style', "display: none;")
-    gameLayout.setAttribute('style', "display: flex;")
-
+    screenX 
     e = true
     if (e = true) {
         //Cursor to Ball
@@ -97,4 +95,4 @@ gameActive.addEventListener("click", e => {
     console.log(e.clientX, e.clientY)
  })
 
-//  change cursor loc upon starting game to inside maze
+//  change cursor loc upon starting game to inside maze -- click on maze starts game

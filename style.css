@@ -91,3 +91,9 @@ p {
     font-family: 'American Kids', cursive;
     font-size: 30px;
 }
+ 
+.obstacle {
+    display: inline-block;
+    position: absolute;
+    transition: left 3s;
+}
