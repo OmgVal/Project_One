@@ -20,10 +20,9 @@ let gameState = document.querySelector('.text')
 //move obstacle
 function move() {
     let moved = false;
-
     moved ? (obstacle.style.left = '78vw') : (obstacle.style.left = '80vw');
 }
-setInterval(move, 2000)
+setInterval(move, 100)
 
 
 //info button
@@ -32,32 +31,54 @@ function displayMsg() {
     
 }
 
+//collision detection
+const detectHit = (value) => {
+    if (value === "mazeBorder") {
+        // gameOver()
+        console.log('Game Over')
+    };
+    if (value === "finish") {
+        console.log('finish')
+    }
+    // const obstacleLeft = cursor.x + cursor.width >= obstacle.x
+    // const obstacleRight = cursor.x <= obstacle.x + obstacle.width
+    // const obstacleTop = cursor.y + cursor.height >= obstacle.y
+    // const obstacleBottom = cursor.y <= obstacle.y + obstacle.height
+    // if (obstacleBottom && obstacleLeft && obstacleTop && obstacleRight) {
+    //     cursor.alive = true
+    //     console.log('alive')
+    // } else {
+    //     console.log('lost')
+    // }
+};
+
 //turn into ball
 function ballCursor() {
     document.addEventListener('mousemove', e => {
         cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+        let check = e.target.classList.value;
+        detectHit(check);
     })
     
 }
 
-// //collision detection
-// function detectHit() {
-//     const obstacleLeft = cursor.x + cursor.width >= obstacle.x
-//     const obstacleRight = cursor.x <= obstacle.x + obstacle.width
-//     const obstacleTop = cursor.y + cursor.height >= obstacle.y
-//     const obstacleBottom = cursor.y <= obstacle.y + obstacle.height
-//     if (obstacleBottom && obstacleLeft && obstacleTop && obstacleRight) {
-//         cursor.alive = true
-//         console.log('alive')
-//      } else {
-//         console.log('lost')
-//      }
-// }
 
+
+// //Game Over
+// function gameOver {
+    //     if 
+    // }
+    
+    
+//  window.addEventListener("mousemove", e => {
+//         let check = e.target.classList.value;
+//         detectHit(check);
+// })
+    
 function gameStart() {
     move()
     ballCursor()
-    detectHit()
+    // detectHit()
 }
 
 // console.log(detectHit())

@@ -90,9 +90,9 @@ p {
 .obstacle {
     box-sizing: border-box;
     position: absolute;
-    width: 234px;
-    height: 91px;
-    left: 461px;
+    width: 174px;
+    height: 71px;
+    left: 861px;
     top: 290px;
     background: #F54DA8;
     border: 5px solid #FFC7F3;
