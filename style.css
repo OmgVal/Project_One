@@ -88,7 +88,18 @@ p {
 }
  
 .obstacle {
-    display: inline-block;
+    box-sizing: border-box;
     position: absolute;
-    transition: left 3s;
+    width: 234px;
+    height: 91px;
+    left: 461px;
+    top: 290px;
+    background: #F54DA8;
+    border: 5px solid #FFC7F3;
+    border-radius: 50px;
+    transition: left 10s;
+}
+
+.restart {
+    background-color: blue;
 }
