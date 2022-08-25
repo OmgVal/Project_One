@@ -24,19 +24,31 @@ function displayMsg() {
 }
 
 document.addEventListener("click", e =>{
+    let gameLayout = document.getElementsByClassName(".groupOne")
     gameActive.setAttribute('style', "display: none;")
-    let gameActive = true 
-    function gameState =
+    gameLayout.setAttribute('style', "display: flex;")
+
+    e = true
+    if (e = true) {
+        //Cursor to Ball
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+            // cursor.setAttribute.style.left = (e.pageX - 25) + "px;";
+            // cursor.setAttribute.style.top = (e.pageY - 25) + "px;";
+        })
+
+    } else {
+        document.removeEventListener('mousemove', e => {
+            cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+        })
+    }
+
+    while (e = true) {
+    }
 
     console.log('start!')
 })
 
-//Cursor to Ball
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
-    // cursor.setAttribute.style.left = (e.pageX - 25) + "px;";
-    // cursor.setAttribute.style.top = (e.pageY - 25) + "px;";
-})
 
 //collision detection
 function detectHit() {

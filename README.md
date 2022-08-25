@@ -22,7 +22,7 @@ Tech Stack = HTML, CSS, JavaScript (Mix of DOM and Canvas APIs)
 * Add a reset button
 * include lvl number
 * add surprise on completion
-* maybe at small animations on background
+* maybe add small animations on background
 
 ## Potential RoadBlocks:
 * having obstacle code not work
