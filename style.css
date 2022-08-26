@@ -46,9 +46,9 @@ h1 {
 
 .mazeContainer {
     position: absolute;
-    max-width: 930px;
-    max-height: 546px;
-    left: 455px;
+    width: 708.2px;
+    height: 631px;
+    left: 535px;
     top: 27px;
 }
 
@@ -65,9 +65,9 @@ h1 {
 
 .mazeOne {
     position: absolute;
-    width: 919px;
-    height: 133px;
-    left: -341px;
+    width: 642.49px;
+    height: 104.99px;
+    left: -369.28px;
     top: 107px;
 
     background: #D49DFF;
@@ -76,10 +76,10 @@ h1 {
 
 .mazeThree {
     position: absolute;
-    width: 644px;
-    height: 133px;
-    left: -66px;
-    top: 330px;
+    width: 450.23px;
+    height: 104.99px;
+    left: -177.03px;
+    top: 283.03px;
     background: #D49DFF;
     border-radius: 50px 0px 50px 50px;
 }
@@ -87,29 +87,30 @@ h1 {
 
 .mazeTwo{
     position: absolute;
-    width: 133px;
-    height: 90px;
-    left: 445px;
-    top: 240px;
+    width: 92.98px;
+    height: 71.04px;
+    left: 180.22px;
+    top: 211.99px;
     background: #D49DFF;
 }
 
-.obstacle{
+.obstacle {
     box-sizing: border-box;
     position: absolute;
-    width: 234px;
-    height: 91px;
-    left: 461px;
-    top: 239px;
+    width: 163.59px;
+    height: 71.83px;
+    left: 181.41px;
+    top: 211.2px;
     background: #F54DA8;
     border: 5px solid #FFC7F3;
     border-radius: 50px;
+    transition: left 10s;
 }
 
 .start {
     position: absolute;
-    width: 94px;
-    height: 133px;
+    width: 65.72px;
+    height: 104.99px;
     left: -435px;
     top: 107px;
     background: #FF9900;
@@ -118,30 +119,30 @@ h1 {
 
 .mazeFour {
     position: absolute;
-    width: 133px;
-    height: 237px;
-    left: -66px;
-    top: 416px;
+    width: 92.98px;
+    height: 187.08px;
+    left: -177px;
+    top: 336px;
     background: #D49DFF;
     border-radius: 0px 0px 50px 50px;
 }
 
 .finish {
     position: absolute;
-    width: 133px;
-    height: 94px;
-    left: -66px;
-    top: 559px;
+    width: 92.98px;
+    height: 74.2px;
+    left: -177.03px;
+    top: 463.8px;
     background: #00fff0;
     border-radius: 0px 0px 50px 50px;
 }
 
 .finish.text {
     position: absolute;
-    width: 70px;
-    height: 24px;
-    left: -35px;
-    top: 594px;
+    width: 48.94px;
+    height: 18.95px;
+    left: -155.35px;
+    top: 491.43px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
@@ -153,11 +154,10 @@ h1 {
 }
 
 .start.text {
-    position: absolute;
-    width: 39px;
-    height: 119px;
-    left: -406px;
-    top: 116px;
+    width: 27.27px;
+    height: 93.94px;
+    left: -414.73px;
+    top: 114.1px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
@@ -185,19 +185,6 @@ p {
     font-size: 30px;
 }
  
-.obstacle {
-    box-sizing: border-box;
-    position: absolute;
-    width: 174px;
-    height: 71px;
-    left: 861px;
-    top: 290px;
-    background: #F54DA8;
-    border: 5px solid #FFC7F3;
-    border-radius: 50px;
-    transition: left 10s;
-}
-
 .restart {
     background-color: blue;
 }
