@@ -58,7 +58,7 @@ function move() {
     let moved = false;
     moved ? (moved = false, obstacle.style.left = '50vw') : (moved = true, obstacle.style.left = '70vw');
 }
-setInterval(move, 2000)
+setInterval(move, 5000)
 
 // console.log(move())
 
@@ -95,12 +95,12 @@ const detectHit = (value) => {
                 
     
 function gameStart() {
-    let gameActive = true;
-    if (gameActive) move();
-
     //Mouse value
     window.addEventListener("mousemove", (e) => {
         let check = e.target.classList.value;
+        //obstacle moves
+        move();
+        //mouse value checked
         detectHit(check);
     })
     // ballCursor()

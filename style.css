@@ -99,12 +99,12 @@ h1 {
     position: absolute;
     width: 163.59px;
     height: 71.83px;
-    left: 100.41px;
+    left: -120.41px;
     top: 211.2px;
     background: #F54DA8;
     border: 5px solid #FFC7F3;
     border-radius: 50px;
-    transition: left 6s;
+    transition: left 10s;
 }
 
 .start {
