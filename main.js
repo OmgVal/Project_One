@@ -14,7 +14,7 @@ const closeModalBtn = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 let endGame = document.querySelector(".restart");
 let cursor = document.querySelector('.cursor');
-let mazePath = document.querySelector('.maze');
+let maze = document.querySelectorAll('.mazePath');
 // let instructions = document.querySelector('.infoBtn').addEventListener("click", displayMsg);
 let obstacle = document.querySelector('.obstacle');
 let gameState = document.querySelector('.text')
@@ -58,9 +58,11 @@ function closeModal(modal) {
 //move obstacle
 function move() {
     let moved = false;
-    moved = false ? (obstacle.style.left = '50vw') : (moved = true, obstacle.style.left = '70vw');
+    moved ? (moved = false, obstacle.style.left = '50vw') : (moved = true, obstacle.style.left = '70vw');
 }
 setInterval(move, 2000)
+
+console.log(move())
 
 
 //info button
@@ -69,114 +71,67 @@ function displayMsg() {
     
 }
 
+// //turn into ball
+// function ballCursor() {
+//     document.addEventListener('mousemove', e => {
+//         cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+//     })
+    
+// }
+
+
 //collision detection
 const detectHit = (value) => {
-    console.log(mazePath.classList.value, value)
-    const mazeClass = mazePath.classList.value
-    // console.log(value)
-    if (value === obstacle) {
-        console.log('dead')
-    } else{
-        // gameOver()
-        console.log('Game Over')
-
-    };
-    if (value === "finish") {
-        console.log('finish')
-    };
-    // const obstacleLeft = cursor.x + cursor.width >= obstacle.x
-    // const obstacleRight = cursor.x <= obstacle.x + obstacle.width
-    // const obstacleTop = cursor.y + cursor.height >= obstacle.y
-    // const obstacleBottom = cursor.y <= obstacle.y + obstacle.height
-    // if (obstacleBottom && obstacleLeft && obstacleTop && obstacleRight) {
-    //     cursor.alive = true
-    //     console.log('alive')
-    // } else {
-    //     console.log('lost')
-    // }
+    if (value === "mazeOne" || value === "mazeTwo" || value === "mazeThree" || value === "mazeFour" || value === "start" || value === "text") {
+        console.log('alive')
+    } else if (value === "finish"){
+        console.log('Winner!')
+    } else {
+        console.log('DAMMMNN YOU SUCK')
+        window.location.reload()
+    }
 };
+                
 
-//turn into ball
-function ballCursor() {
-    document.addEventListener('mousemove', e => {
-        cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+                
+                
+    
+function gameStart() {
+    // let gameActive = true;
+    // if (gameActive) move();
+
+    //Mouse value
+    window.addEventListener("mousemove", (e) => {
         let check = e.target.classList.value;
         detectHit(check);
     })
-    
-}
-
-
-
-// //Game Over
-// function gameOver {
-    //     if 
-    // }
-    
-    
-//  window.addEventListener("mousemove", e => {
-//         let check = e.target.classList.value;
-//         detectHit(check);
-// })
-    
-function gameStart() {
-    move()
-    ballCursor()
+    // ballCursor()
     // detectHit()
 }
 
-console.log(detectHit())
-
-document.addEventListener("click", e =>{
-    const gameActive = document.querySelector(".start");
-    e = true
-    if (e = true) {
-        //Cursor to Ball
-        document.addEventListener('mousemove', e => {
-            cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
-            // cursor.setAttribute.style.left = (e.pageX - 25) + "px;";
-            // cursor.setAttribute.style.top = (e.pageY - 25) + "px;";
-        })
-        detectHit()
-    } else {
-        document.removeEventListener('mousemove', e => {
-            cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
-        })
-    }
-})
-
-
-
-// //Draggable Ball
-// let dragBall;
-
-// function move(id) {
-    //     let obj = document.getElementById('ball');
-    //     obj.onmousedown = function() {
-        //         dragBall = obj;
-        //     }
-        //     document.onmouseup = function(e) {
-            //         dragBall = null;
-            //     }
-            //     document.onmousemove = function(e) {
-                //         let x = e.pageX;
-                //         let y = e.pageY;
+// document.addEventListener("click", e =>{
+//     const gameActive = document.querySelector(".start");
+//     e = true
+//     if (e = true) {
+//         //Cursor to Ball
+//         document.addEventListener('mousemove', e => {
+//             cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+//             // cursor.setAttribute.style.left = (e.pageX - 25) + "px;";
+//             // cursor.setAttribute.style.top = (e.pageY - 25) + "px;";
+//         })
+//         detectHit()
+//     } else {
+//         document.removeEventListener('mousemove', e => {
+//             cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+//         })
+//     }
+// })
                 
-                //         dragBall.style.left = x + "px;";
-                //         dragBall.style.top = y + "px;";
-                //     }
-                // }
-                
-                
- 
-                
-gameActive.addEventListener("click", e => {
-    detectHit()
+// gameActive.addEventListener("click", e => {
+//     detectHit()
 
- })
+//  })
 
- window.addEventListener("mouseover", (e) => {
-    console.log(e.clientX, e.clientY)
- })
-
-//  change cursor loc upon starting game to inside maze -- click on maze starts game
+//  window.addEventListener("mouseover", (e) => {
+//     console.log(e.clientX, e.clientY)
+//  });

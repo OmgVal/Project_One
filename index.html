@@ -14,32 +14,33 @@
         </div>
 
         <div class="container">
-            <div class="cursor"></div>
             <div class="groupOne">
                 <h1>Lvl. One</h1>
-
+                
                 <div class="mazeContainer">
                     <div class="mazePath">
-                        <div class="mazeOne maze"></div>
-                        <div class="mazeTwo maze"></div>
-                        <div class="mazeThree maze"></div>
-                        <div class="mazeFour maze"></div>  
+                        <div class="mazeOne"></div>
+                        <div class="mazeTwo"></div>
+                        <div class="mazeThree"></div>
+                        <div class="mazeFour"></div>  
                     </div>
-
-                    <div class="start">
+                    
+                    <div onclick="gameStart()" class="start">
                         <div class="text">Start</div>
                     </div>
-
+                    
                     <div class="finish">
                         <div class="text">Finish</div>
                     </div>
-
+                    
                     <div class="obstacle"></div>
                 </div>
+                <button class="restart" onClick="document.location.reload(true)">Restart</button>
             </div>
             
+            <div class="cursor"></div>
         </div>
-
+        
         <button data-modal-target="#modal" class="infoBtn">
             <div class="fa-3x">
             <i class="fa-solid fa-circle-info fa-beat-fade" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;" ></i>
@@ -52,12 +53,11 @@
             </div>
 
             <div class="infoBody">
-                to get start click on the orange section 
+                1. Start game by clicking orange section (says "Start" on it) 
             </div>
         </div>
         <div id="overlay"></div>
 
-        <button class="restart" onClick="document.location.reload(true)">Restart</button>
         <script type="text/javascript" src="./main.js"></script>
     </body>
 </html>

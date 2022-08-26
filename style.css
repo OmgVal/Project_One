@@ -42,6 +42,7 @@ h1 {
     background: url(./IMG/Vectorheart.png);
     background-size: cover;
     cursor: none;
+    display: none;
 }
 
 .mazeContainer {
@@ -155,7 +156,7 @@ h1 {
 .start.text {
     width: 27.27px;
     height: 93.94px;
-    left: -414.73px;
+    left: -314.73px;
     top: 114.1px;
     font-family: 'Inter';
     font-style: normal;
@@ -185,7 +186,14 @@ p {
 }
  
 .restart {
-    background-color: blue;
+    position: relative;
+    background-color: rgb(255, 177, 252);
+    border: none;
+    border-radius: 30px;
+    max-width: 60px;
+    max-height: 30px;
+    top: 90%;
+    left: 40%;
 }
 
 .infoBox {
