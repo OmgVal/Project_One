@@ -20,9 +20,9 @@ let gameState = document.querySelector('.text')
 //move obstacle
 function move() {
     let moved = false;
-    moved ? (obstacle.style.left = '78vw') : (obstacle.style.left = '80vw');
+    moved ? (moved = false, obstacle.style.left = '78vw') : (moved = true, obstacle.style.left = '80vw');
 }
-setInterval(move, 100)
+setInterval(move, 6000)
 
 
 //info button
@@ -33,13 +33,19 @@ function displayMsg() {
 
 //collision detection
 const detectHit = (value) => {
-    if (value === "mazeBorder") {
+    console.log(mazePath.classList.value, value)
+    const mazeClass = mazePath.classList.value
+    // console.log(value)
+    if (value === mazeClass) {
+        console.log('alive')
+    } else{
         // gameOver()
         console.log('Game Over')
+
     };
     if (value === "finish") {
         console.log('finish')
-    }
+    };
     // const obstacleLeft = cursor.x + cursor.width >= obstacle.x
     // const obstacleRight = cursor.x <= obstacle.x + obstacle.width
     // const obstacleTop = cursor.y + cursor.height >= obstacle.y

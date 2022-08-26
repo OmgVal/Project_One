@@ -22,9 +22,22 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M50 0C22.3858 0 0 22.3858 0 50V83C0 110.614 22.3858 133 50 133H833V201H372C344.386 201 322 223.386 322 251V283V284V470C322 497.614 344.386 520 372 520H405C432.614 520 455 497.614 455 470V334H916C943.614 334 966 311.614 966 284V212V201V133V122V50C966 22.3858 943.614 0 916 0H50Z"/>
                     </mask>
                     <path class="maze" fill-rule="evenodd" clip-rule="evenodd" d="M50 0C22.3858 0 0 22.3858 0 50V83C0 110.614 22.3858 133 50 133H833V201H372C344.386 201 322 223.386 322 251V283V284V470C322 497.614 344.386 520 372 520H405C432.614 520 455 497.614 455 470V334H916C943.614 334 966 311.614 966 284V212V201V133V122V50C966 22.3858 943.614 0 916 0H50Z" fill="#D49DFF"/>
-                    <path class="mazeBorder" d="M833 133H848V118H833V133ZM833 201V216H848V201H833ZM455 334V319H440V334H455ZM15 50C15 30.67 30.67 15 50 15V-15C14.1015 -15 -15 14.1015 -15 50H15ZM15 83V50H-15V83H15ZM50 118C30.67 118 15 102.33 15 83H-15C-15 118.899 14.1015 148 50 148V118ZM833 118H50V148H833V118ZM848 201V133H818V201H848ZM372 216H833V186H372V216ZM337 251C337 231.67 352.67 216 372 216V186C336.102 186 307 215.101 307 251H337ZM337 283V251H307V283H337ZM337 284V283H307V284H337ZM337 470V284H307V470H337ZM372 505C352.67 505 337 489.33 337 470H307C307 505.898 336.102 535 372 535V505ZM405 505H372V535H405V505ZM440 470C440 489.33 424.33 505 405 505V535C440.898 535 470 505.898 470 470H440ZM440 334V470H470V334H440ZM916 319H455V349H916V319ZM951 284C951 303.33 935.33 319 916 319V349C951.899 349 981 319.898 981 284H951ZM951 212V284H981V212H951ZM951 201V212H981V201H951ZM951 133V201H981V133H951ZM951 122V133H981V122H951ZM951 50V122H981V50H951ZM916 15C935.33 15 951 30.67 951 50H981C981 14.1015 951.899 -15 916 -15V15ZM50 15H916V-15H50V15Z" fill="#D0FA29" mask="url(#path-1-inside-1_33_34)"/>
-                    <path class="finish" d="M337 398H440V470C440 489.33 424.33 505 405 505H372C352.67 505 337 489.33 337 470V398Z" fill="#00FFF0"/>
-                    <path onclick="gameStart()" class="start" d="M0 47C0 21.0426 21.0426 0 47 0H94V133H47C21.0426 133 0 111.957 0 86V47Z" fill="#FF9900"/>
+                    <path 
+                    class="mazeBorder" 
+                    d="M833 133H848V118H833V133ZM833 201V216H848V201H833ZM455 334V319H440V334H455ZM15 50C15 30.67 30.67 15 50 15V-15C14.1015 -15 -15 14.1015 -15 50H15ZM15 83V50H-15V83H15ZM50 118C30.67 118 15 102.33 15 83H-15C-15 118.899 14.1015 148 50 148V118ZM833 118H50V148H833V118ZM848 201V133H818V201H848ZM372 216H833V186H372V216ZM337 251C337 231.67 352.67 216 372 216V186C336.102 186 307 215.101 307 251H337ZM337 283V251H307V283H337ZM337 284V283H307V284H337ZM337 470V284H307V470H337ZM372 505C352.67 505 337 489.33 337 470H307C307 505.898 336.102 535 372 535V505ZM405 505H372V535H405V505ZM440 470C440 489.33 424.33 505 405 505V535C440.898 535 470 505.898 470 470H440ZM440 334V470H470V334H440ZM916 319H455V349H916V319ZM951 284C951 303.33 935.33 319 916 319V349C951.899 349 981 319.898 981 284H951ZM951 212V284H981V212H951ZM951 201V212H981V201H951ZM951 133V201H981V133H951ZM951 122V133H981V122H951ZM951 50V122H981V50H951ZM916 15C935.33 15 951 30.67 951 50H981C981 14.1015 951.899 -15 916 -15V15ZM50 15H916V-15H50V15Z" 
+                    fill="#D0FA29" 
+                    mask="url(#path-1-inside-1_33_34)"/>
+
+                    <path 
+                    class="finish"
+                    d="M337 398H440V470C440 489.33 424.33 505 405 505H372C352.67 505 337 489.33 337 470V398Z" 
+                    fill="#00FFF0"/>
+                    
+                    <path 
+                    onclick="gameStart()" 
+                    class="start" 
+                    d="M0 47C0 21.0426 21.0426 0 47 0H94V133H47C21.0426 133 0 111.957 0 86V47Z" 
+                    fill="#FF9900"/>
                     <div class="obstacle"> </div>
                 </svg> 
                 
@@ -32,16 +45,20 @@
             
         </div>
 
-        <div class="infoBox">
-            <button class="infoBtn" class="closeBtn"> <p></p><div class="fa-3x">
-                <i class="fa-solid fa-circle-info fa-beat-fade" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;" ></i>
-            </button>
-            <div class="instructions" id="instList">
-                <div class="instHeader">How to play:</div>
+        <button class="infoBtn"><div class="fa-3x">
+            <i class="fa-solid fa-circle-info fa-beat-fade" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;" ></i>
+        </button>
+        <div class="infoBox" id="modal">
+            <div class="infoHeader">
+                <div class="title">How to play:</div>
+                <button class="closebtn"> &times;</button>  
+            </div>
 
-                <div class="instBody"></div>
+            <div class="instBody">
+                to get start click on the orange section 
             </div>
         </div>
+        <div id="overlay"></div>
 
         <button class="resetBtn" onClick="document.location.reload(true)">Restart</button>
         <script type="text/javascript" src="./main.js"></script>
