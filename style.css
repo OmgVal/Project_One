@@ -24,11 +24,12 @@ h1 {
 }
 
 .container h1 {
+    font-size: 30px;
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    padding-top: 10px;
-    font-family: "American Kids", cursive;
+    padding-top: 40px;
+    font-family: 'Mystery Quest', cursive;
     color: #fc7702;
 }
 
