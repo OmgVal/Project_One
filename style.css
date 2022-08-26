@@ -44,13 +44,24 @@ h1 {
     cursor: none;
 }
 
-/* Group 1
+.mazeContainer {
+    position: absolute;
+    max-width: 930px;
+    max-height: 546px;
+    left: 455px;
+    top: 27px;
+}
 
-position: absolute;
-width: 1130px;
-height: 546px;
-left: -435px;
-top: 107px; */
+.groupOne {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-size: 100vw 100vh;
+    width: 1000px;
+    height: 600px;
+    background: rgba(207, 182, 255, 0.946);
+    border-radius: 91px;
+} 
 
 .mazeOne {
     position: absolute;
@@ -69,44 +80,40 @@ top: 107px; */
     height: 133px;
     left: -66px;
     top: 330px;
-
     background: #D49DFF;
     border-radius: 50px 0px 50px 50px;
 }
 
 
 .mazeTwo{
-
-position: absolute;
-width: 133px;
-height: 90px;
-left: 445px;
-top: 240px;
-
-background: #D49DFF;
+    position: absolute;
+    width: 133px;
+    height: 90px;
+    left: 445px;
+    top: 240px;
+    background: #D49DFF;
 }
 
 .obstacle{
-
-box-sizing: border-box;
-position: absolute;
-width: 234px;
-height: 91px;
-left: 461px;
-top: 239px;
-background: #F54DA8;
-border: 5px solid #FFC7F3;
-border-radius: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 234px;
+    height: 91px;
+    left: 461px;
+    top: 239px;
+    background: #F54DA8;
+    border: 5px solid #FFC7F3;
+    border-radius: 50px;
 }
 
 .start {
-position: absolute;
-width: 94px;
-height: 133px;
-left: -435px;
-top: 107px;
-background: #FF9900;
-border-radius: 47px 0px 0px 47px;
+    position: absolute;
+    width: 94px;
+    height: 133px;
+    left: -435px;
+    top: 107px;
+    background: #FF9900;
+    border-radius: 47px 0px 0px 47px;
 }
 
 .mazeFour {
@@ -160,16 +167,6 @@ border-radius: 47px 0px 0px 47px;
     color: #DBFF00;
 }
 
- .groupOne {
-    display: flex;
-    justify-content: center;
-    background-size: 100vw 100vh;
-    width: 1000px;
-    height: 600px;
-    background: rgba(207, 182, 255, 0.946);
-    border-radius: 91px;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -177,6 +174,7 @@ border-radius: 47px 0px 0px 47px;
 }
 
 .infoBtn {
+    position: absolute;
     border: none;
     background-color: rgba(0, 0, 139, 0);
     color: rgb(255, 1, 137);
