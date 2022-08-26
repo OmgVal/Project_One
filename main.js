@@ -57,10 +57,11 @@ function closeModal(modal) {
 
 //move obstacle
 function move() {
-    // let moved = false;
-    // moved ? (moved = false, obstacle.style.left = '50vw') : (moved = true, obstacle.style.left = '70vw');
+    let moved = false;
+    moved ? (moved = false, obstacle.style.left = '50vw') : (moved = true, obstacle.style.left = '70vw');
     // (pos >=540) ? clearInterval(run) : pos += 10, (obstacle.style.left = pos + " px;")
 }
+setInterval(move, 5000)
 
 
 // console.log(move())
