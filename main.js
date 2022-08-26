@@ -55,128 +55,128 @@ function closeModal(modal) {
 }
 
 
-// //move obstacle
-// function move() {
-//     let moved = false;
-//     moved ? (moved = false, obstacle.style.left = '78vw') : (moved = true, obstacle.style.left = '80vw');
-// }
-// setInterval(move, 6000)
+//move obstacle
+function move() {
+    let moved = false;
+    moved = false ? (obstacle.style.left = '50vw') : (moved = true, obstacle.style.left = '70vw');
+}
+setInterval(move, 2000)
 
 
-// //info button
-// function displayMsg() {
-//     console.log('itworks!')
+//info button
+function displayMsg() {
+    console.log('itworks!')
     
-// }
+}
 
-// //collision detection
-// const detectHit = (value) => {
-//     console.log(mazePath.classList.value, value)
-//     const mazeClass = mazePath.classList.value
-//     // console.log(value)
-//     if (value === obstacle) {
-//         console.log('dead')
-//     } else{
-//         // gameOver()
-//         console.log('Game Over')
+//collision detection
+const detectHit = (value) => {
+    console.log(mazePath.classList.value, value)
+    const mazeClass = mazePath.classList.value
+    // console.log(value)
+    if (value === obstacle) {
+        console.log('dead')
+    } else{
+        // gameOver()
+        console.log('Game Over')
 
-//     };
-//     if (value === "finish") {
-//         console.log('finish')
-//     };
-//     // const obstacleLeft = cursor.x + cursor.width >= obstacle.x
-//     // const obstacleRight = cursor.x <= obstacle.x + obstacle.width
-//     // const obstacleTop = cursor.y + cursor.height >= obstacle.y
-//     // const obstacleBottom = cursor.y <= obstacle.y + obstacle.height
-//     // if (obstacleBottom && obstacleLeft && obstacleTop && obstacleRight) {
-//     //     cursor.alive = true
-//     //     console.log('alive')
-//     // } else {
-//     //     console.log('lost')
-//     // }
-// };
+    };
+    if (value === "finish") {
+        console.log('finish')
+    };
+    // const obstacleLeft = cursor.x + cursor.width >= obstacle.x
+    // const obstacleRight = cursor.x <= obstacle.x + obstacle.width
+    // const obstacleTop = cursor.y + cursor.height >= obstacle.y
+    // const obstacleBottom = cursor.y <= obstacle.y + obstacle.height
+    // if (obstacleBottom && obstacleLeft && obstacleTop && obstacleRight) {
+    //     cursor.alive = true
+    //     console.log('alive')
+    // } else {
+    //     console.log('lost')
+    // }
+};
 
-// //turn into ball
-// function ballCursor() {
-//     document.addEventListener('mousemove', e => {
-//         cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+//turn into ball
+function ballCursor() {
+    document.addEventListener('mousemove', e => {
+        cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+        let check = e.target.classList.value;
+        detectHit(check);
+    })
+    
+}
+
+
+
+// //Game Over
+// function gameOver {
+    //     if 
+    // }
+    
+    
+//  window.addEventListener("mousemove", e => {
 //         let check = e.target.classList.value;
 //         detectHit(check);
-//     })
-    
-// }
-
-
-
-// // //Game Over
-// // function gameOver {
-//     //     if 
-//     // }
-    
-    
-// //  window.addEventListener("mousemove", e => {
-// //         let check = e.target.classList.value;
-// //         detectHit(check);
-// // })
-    
-// function gameStart() {
-//     move()
-//     ballCursor()
-//     // detectHit()
-// }
-
-// console.log(detectHit())
-
-// document.addEventListener("click", e =>{
-//     const gameActive = document.querySelector(".start");
-//     e = true
-//     if (e = true) {
-//         //Cursor to Ball
-//         document.addEventListener('mousemove', e => {
-//             cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
-//             // cursor.setAttribute.style.left = (e.pageX - 25) + "px;";
-//             // cursor.setAttribute.style.top = (e.pageY - 25) + "px;";
-//         })
-//         detectHit()
-//     } else {
-//         document.removeEventListener('mousemove', e => {
-//             cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
-//         })
-//     }
 // })
+    
+function gameStart() {
+    move()
+    ballCursor()
+    // detectHit()
+}
+
+console.log(detectHit())
+
+document.addEventListener("click", e =>{
+    const gameActive = document.querySelector(".start");
+    e = true
+    if (e = true) {
+        //Cursor to Ball
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+            // cursor.setAttribute.style.left = (e.pageX - 25) + "px;";
+            // cursor.setAttribute.style.top = (e.pageY - 25) + "px;";
+        })
+        detectHit()
+    } else {
+        document.removeEventListener('mousemove', e => {
+            cursor.setAttribute('style', "top: " + (e.pageY - 25) + 'px; left: ' + (e.pageX - 25) + 'px;')
+        })
+    }
+})
 
 
 
-// // //Draggable Ball
-// // let dragBall;
+// //Draggable Ball
+// let dragBall;
 
-// // function move(id) {
-//     //     let obj = document.getElementById('ball');
-//     //     obj.onmousedown = function() {
-//         //         dragBall = obj;
-//         //     }
-//         //     document.onmouseup = function(e) {
-//             //         dragBall = null;
-//             //     }
-//             //     document.onmousemove = function(e) {
-//                 //         let x = e.pageX;
-//                 //         let y = e.pageY;
+// function move(id) {
+    //     let obj = document.getElementById('ball');
+    //     obj.onmousedown = function() {
+        //         dragBall = obj;
+        //     }
+        //     document.onmouseup = function(e) {
+            //         dragBall = null;
+            //     }
+            //     document.onmousemove = function(e) {
+                //         let x = e.pageX;
+                //         let y = e.pageY;
                 
-//                 //         dragBall.style.left = x + "px;";
-//                 //         dragBall.style.top = y + "px;";
-//                 //     }
-//                 // }
+                //         dragBall.style.left = x + "px;";
+                //         dragBall.style.top = y + "px;";
+                //     }
+                // }
                 
                 
  
                 
-// gameActive.addEventListener("click", e => {
-//     detectHit()
+gameActive.addEventListener("click", e => {
+    detectHit()
 
-//  })
+ })
 
-//  window.addEventListener("mouseover", (e) => {
-//     console.log(e.clientX, e.clientY)
-//  })
+ window.addEventListener("mouseover", (e) => {
+    console.log(e.clientX, e.clientY)
+ })
 
 //  change cursor loc upon starting game to inside maze -- click on maze starts game

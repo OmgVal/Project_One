@@ -69,8 +69,7 @@ h1 {
     height: 104.99px;
     left: -369.28px;
     top: 107px;
-
-    background: #D49DFF;
+    background: #b6ff0b;
     border-radius: 0px 50px 0px 0px;
 }
 
@@ -80,7 +79,7 @@ h1 {
     height: 104.99px;
     left: -177.03px;
     top: 283.03px;
-    background: #D49DFF;
+    background: #b6ff0b;
     border-radius: 50px 0px 50px 50px;
 }
 
@@ -91,7 +90,7 @@ h1 {
     height: 71.04px;
     left: 180.22px;
     top: 211.99px;
-    background: #D49DFF;
+    background: #b6ff0b;
 }
 
 .obstacle {
@@ -104,7 +103,7 @@ h1 {
     background: #F54DA8;
     border: 5px solid #FFC7F3;
     border-radius: 50px;
-    transition: left 10s;
+    transition: left 6s;
 }
 
 .start {
@@ -123,7 +122,7 @@ h1 {
     height: 187.08px;
     left: -177px;
     top: 336px;
-    background: #D49DFF;
+    background: #b6ff0b;
     border-radius: 0px 0px 50px 50px;
 }
 
