@@ -99,7 +99,7 @@ h1 {
     position: absolute;
     width: 163.59px;
     height: 71.83px;
-    left: 181.41px;
+    left: 100.41px;
     top: 211.2px;
     background: #F54DA8;
     border: 5px solid #FFC7F3;
@@ -143,8 +143,7 @@ h1 {
     height: 18.95px;
     left: -155.35px;
     top: 491.43px;
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Silkscreen', cursive;
     font-weight: 800;
     font-size: 20px;
     line-height: 24px;
@@ -158,9 +157,7 @@ h1 {
     height: 93.94px;
     left: -314.73px;
     top: 114.1px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
+    font-family: 'Silkscreen', cursive;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -186,12 +183,13 @@ p {
 }
  
 .restart {
+    font-family: 'Silkscreen', cursive;
     position: relative;
-    background-color: rgb(255, 177, 252);
+    background-color: rgb(255, 97, 250);
     border: none;
     border-radius: 30px;
-    max-width: 60px;
-    max-height: 30px;
+    max-width: 80px;
+    max-height: 40px;
     top: 90%;
     left: 40%;
 }
