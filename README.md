@@ -4,8 +4,8 @@
 
 YOU'RE A BALL! No seriously...you're a ball. Maybe not in real life BUT you will have to become one with the ball if to want win this game. All you have to do to win is drag the ball to the finish line! Seems simple enough. Oh, I forgot to mention there will be obstacles along the way. NO WOOOORRRIIIESS I know you can summon your inner Neo and dodge them like a champ!
 
-## deploy:
-![project] (https://omgvalicious.github.io/Project_One/)
+## Deploy:
+* https://omgvalicious.github.io/Project_One/
 
 ![matrix](https://media.giphy.com/media/eIm624c8nnNbiG0V3g/giphy.gif)
 

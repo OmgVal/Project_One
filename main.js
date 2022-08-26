@@ -88,10 +88,10 @@ function celebrate() {
     cheerSound.play();
     picWin.style.display = 'block';
     document.body.style.background = "black"
-    setInterval(celebrate, 1000)
+    setInterval(celebrate, 3000)
     setTimeout(function(){
         location = ''
-      },5000)
+      },4000)
 }
 
 
@@ -101,7 +101,7 @@ const detectHit = (value) => {
     if (value === "mazeOne" || value === "mazeTwo" || value === "mazeThree" || value === "mazeFour" || value === "start" || value === "text") {
         console.log('alive')
         document.getElementById("displayMsg").innerHTML = 'Level One -- Game Active'
-    } else if (value === "finish" || value === "text"){
+    } else if (value === "finish" || value === "finishText"){
         document.getElementById("displayMsg").innerHTML = 'Winner!';
         // cheerSound.play();
         // picWin.style.display = 'block';
@@ -112,9 +112,9 @@ const detectHit = (value) => {
         }
 
     } else {
-        setTimeout(function(){
-            location = ''
-          },450)
+        // setTimeout(function(){
+        //     location = ''
+        //   },450)
         document.getElementById("displayMsg").innerHTML = 'Try Again!';
         // window.location.reload()
     }
