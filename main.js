@@ -17,6 +17,9 @@ let maze = document.querySelectorAll('.mazePath');
 let obstacle = document.querySelector('.obstacle');
 let gameState = document.querySelector('.text')
 
+// Winner celebration
+const picWin = document.querySelector('.finishResult')
+const cheerSound = document.querySelector('.cheer')
 
 //Modal
 openModalBtn.forEach(button => {
@@ -81,17 +84,39 @@ function displayMsg() {
     
 // }
 
+function celebrate() {
+    cheerSound.play();
+    picWin.style.display = 'block';
+    document.body.style.background = "black"
+    setInterval(celebrate, 1000)
+    setTimeout(function(){
+        location = ''
+      },5000)
+}
+
+
 
 //collision detection
 const detectHit = (value) => {
     if (value === "mazeOne" || value === "mazeTwo" || value === "mazeThree" || value === "mazeFour" || value === "start" || value === "text") {
         console.log('alive')
         document.getElementById("displayMsg").innerHTML = 'Level One -- Game Active'
-    } else if (value === "finish"){
+    } else if (value === "finish" || value === "text"){
         document.getElementById("displayMsg").innerHTML = 'Winner!';
+        // cheerSound.play();
+        // picWin.style.display = 'block';
+        // document.body.style.background = "black"
+        let winner = true
+        if (winner) {
+        celebrate()
+        }
+
     } else {
+        setTimeout(function(){
+            location = ''
+          },450)
         document.getElementById("displayMsg").innerHTML = 'Try Again!';
-        window.location.reload()
+        // window.location.reload()
     }
 };
                 
