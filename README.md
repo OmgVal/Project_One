@@ -34,12 +34,15 @@ Tech Stack = HTML, CSS, JavaScript the DOM
 I struggled a lot with getting my javascript to work. Im glad it does now though at some parts I'm not sure why or how. There was a lot of guessing involved. My maze layout was the hardest thing to get down and that one was simply using canvas and figma. I do think this project helped me understand javascript. 
 
 Sources:
-##Custom cursor
+## Custom cursor
 * https://youtu.be/rfpRZ2t_BrQ
 
-##Modal tutorial
+## Modal tutorial
 * https://youtu.be/MBaw_6cPmAw
 
-##Moving obstacles
+## Moving obstacles
 * https://codepen.io/jmhooper/pen/GxgvVr
 * https://youtu.be/yK7vHCfswok
+
+## Celebration
+* https://youtu.be/sIBZGWQ7gM8
