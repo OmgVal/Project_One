@@ -10,7 +10,7 @@ YOU'RE A BALL! No seriously...you're a ball. Maybe not in real life BUT you will
 ![matrix](https://media.giphy.com/media/eIm624c8nnNbiG0V3g/giphy.gif)
 
 ## Game Layout:
-![Wireframe](ProjectOne-Wireframe.png)
+![Wireframe](./IMG/ProjectOne-Wireframe.png)
 
 ### What is going into the game? 
 Tech Stack = HTML, CSS, JavaScript the DOM
