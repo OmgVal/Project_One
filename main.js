@@ -52,13 +52,16 @@ function closeModal(modal) {
     overlay.classList.remove('active')
 }
 
+// let run = setInterval(move, 5000);
+// let pos = 0;
 
 //move obstacle
 function move() {
-    let moved = false;
-    moved ? (moved = false, obstacle.style.left = '50vw') : (moved = true, obstacle.style.left = '70vw');
+    // let moved = false;
+    // moved ? (moved = false, obstacle.style.left = '50vw') : (moved = true, obstacle.style.left = '70vw');
+    // (pos >=540) ? clearInterval(run) : pos += 10, (obstacle.style.left = pos + " px;")
 }
-setInterval(move, 5000)
+
 
 // console.log(move())
 
@@ -82,6 +85,7 @@ function displayMsg() {
 const detectHit = (value) => {
     if (value === "mazeOne" || value === "mazeTwo" || value === "mazeThree" || value === "mazeFour" || value === "start" || value === "text") {
         console.log('alive')
+        document.getElementById("displayMsg").innerHTML = 'Level One -- Game Active'
     } else if (value === "finish"){
         document.getElementById("displayMsg").innerHTML = 'Winner!';
     } else {

@@ -10,13 +10,13 @@ YOU'RE A BALL! No seriously...you're a ball. Maybe not in real life BUT you will
 ![Wireframe](ProjectOne-Wireframe.png)
 
 ### What is going into the game? 
-Tech Stack = HTML, CSS, JavaScript (Mix of DOM and Canvas APIs)
+Tech Stack = HTML, CSS, JavaScript the DOM
 
 ## MVPs:
 1. Page with start button prior to loading game unless clicked
 1. After click load maze and instructions (dont forget obstacle)
-1. On hover allow user to drag ball within the maze 
-1. Once maze is complete load next level and repeat steps 1-3 until no more levels left
+1. allow user to move within the maze 
+1. Once maze is complete display winner message
 
 ## Stretch Goals:
 * Add a reset button
@@ -30,6 +30,16 @@ Tech Stack = HTML, CSS, JavaScript (Mix of DOM and Canvas APIs)
 * using longer scripts instead of shortcuts when applicable 
 * Problem solving/converting ideas into code
 
+## Post-Preject Reflection:
+I struggled a lot with getting my javascript to work. Im glad it does now though at some parts I'm not sure why or how. There was a lot of guessing involved. My maze layout was the hardest thing to get down and that one was simply using canvas and figma. I do think this project helped me understand javascript. 
+
 Sources:
-https://youtu.be/rfpRZ2t_BrQ
-https://youtu.be/MBaw_6cPmAw
+##Custom cursor
+* https://youtu.be/rfpRZ2t_BrQ
+
+##Modal tutorial
+* https://youtu.be/MBaw_6cPmAw
+
+##Moving obstacles
+* https://codepen.io/jmhooper/pen/GxgvVr
+* https://youtu.be/yK7vHCfswok
