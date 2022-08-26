@@ -32,16 +32,6 @@ h1 {
     color: #fc7702;
 }
 
-.groupOne svg {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    /* background-size: 100vw 50vh; */
-    padding: 12%;
-    width: fit-content;
-    height: fit-content;
-   
-}
 
 .cursor {
     width: 50px;
@@ -54,10 +44,120 @@ h1 {
     cursor: none;
 }
 
-.maze {
-    width: 980;
-    height: 150;
-    /* cursor: url(./IMG/Vectorheart.png), auto; */
+/* Group 1
+
+position: absolute;
+width: 1130px;
+height: 546px;
+left: -435px;
+top: 107px; */
+
+.mazeOne {
+    position: absolute;
+    width: 919px;
+    height: 133px;
+    left: -341px;
+    top: 107px;
+
+    background: #D49DFF;
+    border-radius: 0px 50px 0px 0px;
+}
+
+.mazeThree {
+    position: absolute;
+    width: 644px;
+    height: 133px;
+    left: -66px;
+    top: 330px;
+
+    background: #D49DFF;
+    border-radius: 50px 0px 50px 50px;
+}
+
+
+.mazeTwo{
+
+position: absolute;
+width: 133px;
+height: 90px;
+left: 445px;
+top: 240px;
+
+background: #D49DFF;
+}
+
+.obstacle{
+
+box-sizing: border-box;
+position: absolute;
+width: 234px;
+height: 91px;
+left: 461px;
+top: 239px;
+background: #F54DA8;
+border: 5px solid #FFC7F3;
+border-radius: 50px;
+}
+
+.start {
+position: absolute;
+width: 94px;
+height: 133px;
+left: -435px;
+top: 107px;
+background: #FF9900;
+border-radius: 47px 0px 0px 47px;
+}
+
+.mazeFour {
+    position: absolute;
+    width: 133px;
+    height: 237px;
+    left: -66px;
+    top: 416px;
+    background: #D49DFF;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.finish {
+    position: absolute;
+    width: 133px;
+    height: 94px;
+    left: -66px;
+    top: 559px;
+    background: #00fff0;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.finish.text {
+    position: absolute;
+    width: 70px;
+    height: 24px;
+    left: -35px;
+    top: 594px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FF5C00;
+}
+
+.start.text {
+    position: absolute;
+    width: 39px;
+    height: 119px;
+    left: -406px;
+    top: 116px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #DBFF00;
 }
 
  .groupOne {
