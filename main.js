@@ -5,14 +5,12 @@ Step 2: game will be active until player either
     -restarts game
     -reaches completes lvl 
 Step 3: if player dies make sure to only restart the lvl not the whole game
-
 */
 
 const body = document.body
 const openModalBtn = document.querySelectorAll('[data-modal-target]')
 const closeModalBtn = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
-let endGame = document.querySelector(".restart");
 let cursor = document.querySelector('.cursor');
 let maze = document.querySelectorAll('.mazePath');
 // let instructions = document.querySelector('.infoBtn').addEventListener("click", displayMsg);
@@ -62,7 +60,7 @@ function move() {
 }
 setInterval(move, 2000)
 
-console.log(move())
+// console.log(move())
 
 
 //info button
@@ -85,9 +83,9 @@ const detectHit = (value) => {
     if (value === "mazeOne" || value === "mazeTwo" || value === "mazeThree" || value === "mazeFour" || value === "start" || value === "text") {
         console.log('alive')
     } else if (value === "finish"){
-        console.log('Winner!')
+        document.getElementById("displayMsg").innerHTML = 'Winner!';
     } else {
-        console.log('DAMMMNN YOU SUCK')
+        document.getElementById("displayMsg").innerHTML = 'Try Again!';
         window.location.reload()
     }
 };
@@ -97,8 +95,8 @@ const detectHit = (value) => {
                 
     
 function gameStart() {
-    // let gameActive = true;
-    // if (gameActive) move();
+    let gameActive = true;
+    if (gameActive) move();
 
     //Mouse value
     window.addEventListener("mousemove", (e) => {
