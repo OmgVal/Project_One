@@ -101,7 +101,7 @@ const detectHit = (value) => {
     if (value === "mazeOne" || value === "mazeTwo" || value === "mazeThree" || value === "mazeFour" || value === "start" || value === "text") {
         console.log('alive')
         document.getElementById("displayMsg").innerHTML = 'Level One -- Game Active'
-    } else if (value === "finish" || value === "finishText"){
+    } else if (value === "finish" || value === "finishText" || value === "finishResult"){
         document.getElementById("displayMsg").innerHTML = 'Winner!';
         // cheerSound.play();
         // picWin.style.display = 'block';
@@ -116,7 +116,7 @@ const detectHit = (value) => {
         //     location = ''
         //   },450)
         document.getElementById("displayMsg").innerHTML = 'Try Again!';
-        // window.location.reload()
+        window.location.reload()
     }
 };
                 
